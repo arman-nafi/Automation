@@ -1,0 +1,48 @@
+TC003_Pomis1AllAreas.py::TC001_Pomis1_Report::test_Central_Area
+--------------------------------------------------------------------
+Last Page: [WARNING! Browser Not Open!]
+  Browser: chrome (103.0.5060.114)
+   Driver: chromedriver (103.0.5060.53)
+Timestamp: 1657095935  (Unix Timestamp)
+     Date: Wednesday, 6 July 2022
+     Time: 2:25:35 PM  (Bangladesh Standard Time, UTC+06:00)
+--------------------------------------------------------------------
+Traceback: File "C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\python-workplace\tmss-ict\iMikrof\TestsCases\Pomis1Report\TC003_Pomis1AllAreas.py", line 161, in test_Central_Area
+    self.click(btnLogin)
+  File "E:\python-workplace\TMSS-ICT\iMikrof\venv\lib\site-packages\seleniumbase\fixtures\base_case.py", line 397, in click
+    latest_window_count = len(self.driver.window_handles)
+  File "E:\python-workplace\TMSS-ICT\iMikrof\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 591, in window_handles
+    return self.execute(Command.W3C_GET_WINDOW_HANDLES)['value']
+  File "E:\python-workplace\TMSS-ICT\iMikrof\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 435, in execute
+    self.error_handler.check_response(response)
+  File "E:\python-workplace\TMSS-ICT\iMikrof\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+Exception: Message: chrome not reachable
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00246463+2188387]
+	Ordinal0 [0x001DE461+1762401]
+	Ordinal0 [0x000F3C40+801856]
+	Ordinal0 [0x000E8932+756018]
+	Ordinal0 [0x000DC2F0+705264]
+	Ordinal0 [0x0014399E+1128862]
+	Ordinal0 [0x0013C7A3+1099683]
+	Ordinal0 [0x00116BE0+945120]
+	Ordinal0 [0x00117AD6+948950]
+	GetHandleVerifier [0x004E71F2+2712546]
+	GetHandleVerifier [0x004D886D+2652765]
+	GetHandleVerifier [0x002D002A+520730]
+	GetHandleVerifier [0x002CEE06+516086]
+	Ordinal0 [0x001E468B+1787531]
+	Ordinal0 [0x001E8E88+1805960]
+	Ordinal0 [0x001E8F75+1806197]
+	Ordinal0 [0x001F1DF1+1842673]
+	BaseThreadInitThunk [0x75BEFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76EF7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76EF7A6E+238]
+	(No symbol) [0x00000000]
