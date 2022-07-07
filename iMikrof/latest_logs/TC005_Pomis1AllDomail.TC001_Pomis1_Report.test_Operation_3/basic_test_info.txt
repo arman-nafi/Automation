@@ -1,0 +1,26 @@
+TC005_Pomis1AllDomail.py::TC001_Pomis1_Report::test_Operation_3
+--------------------------------------------------------------------
+Last Page: https://timf.imikrof.com/PKSF_POMIS_1_REPORT
+  Browser: chrome (103.0.5060.114)
+   Driver: chromedriver (103.0.5060.53)
+Timestamp: 1657169245  (Unix Timestamp)
+     Date: Thursday, 7 July 2022
+     Time: 10:47:25 AM  (Bangladesh Standard Time, UTC+06:00)
+--------------------------------------------------------------------
+Traceback: File "C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 591, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 549, in _callTestMethod
+    method()
+  File "E:\python-workplace\tmss-ict\iMikrof\TestsCases\Pomis1Report\TC005_Pomis1AllDomail.py", line 258, in test_Operation_3
+    self.assert_equal(exp_samity_total, act_samity_total)
+  File "C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\site-packages\seleniumbase\fixtures\base_case.py", line 5908, in assert_equal
+    self.assertEqual(first, second, msg=msg)
+  File "C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 845, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 1226, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\unittest\case.py", line 675, in fail
+    raise self.failureException(msg)
+Exception: '1518' != '1100'
+- 1518
++ 1100

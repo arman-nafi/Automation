@@ -4,7 +4,7 @@ import time
 
 
 
-set_month = "March"
+set_month = "June"
 set_year = "2022"
 #set_loan_option = "Loan Product"
 
@@ -38,6 +38,7 @@ class TC001_Pomis1_Report(BaseCase):
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
         self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.type(branch, "8 - Bogura Town Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -170,8 +171,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        #self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.type(branch, "9 - Central Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -304,8 +306,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        #self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "10 - Sherpur Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -437,8 +440,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        #self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "11 - Dupchanchia Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -570,8 +574,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        #self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "12 - Hakimpur Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -703,8 +708,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        #self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "13 - Akkelpur Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -835,8 +841,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        # self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "14 - Nozipur Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -968,8 +975,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        # self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "15 - Nimgachi Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -1101,8 +1109,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        # self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "16 - Ullapara Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -1234,8 +1243,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        # self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "17 - Puspopara Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -1366,8 +1376,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        # self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "18 - Puthia Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -1499,8 +1510,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        # self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "19 - Rajshahi Area")
         self.type(month, set_month)
         self.type(year, set_year)
@@ -1632,8 +1644,9 @@ class TC001_Pomis1_Report(BaseCase):
 
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
-        # self.wait(5)
+        self.wait(2)
         self.type(report_level, "Areas")
+        self.wait(2)
         self.select_option_by_text(branch, "20 - Fulbari Area")
         self.type(month, set_month)
         self.type(year, set_year)

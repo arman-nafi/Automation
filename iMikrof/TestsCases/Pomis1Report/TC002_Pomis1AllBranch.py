@@ -5,7 +5,7 @@ import time
 
 
 set_report_level = "Branch"
-set_month = "March"
+set_month = "June"
 set_year = "2022"
 #set_loan_option = "Loan Product"
 
@@ -25,15 +25,19 @@ class TC001_Pomis1_Report(BaseCase):
         show = "//button[normalize-space()='Show']"
 
         self.open_url(url)
+        self.maximize_window()
         self.type(username, "arman")
         self.type(password, "123456789")
         self.click(btnLogin)
         print("Login Successful")
 
+        self.wait(2)
+
+
         # Pomis-1 Reports
         self.open_url("https://timf.imikrof.com/PKSF_POMIS_1_REPORT")
+        self.wait(2)
         self.type(report_level, set_report_level)
-        # self.type(branch, "0063 - Kichok Branch")
         self.type(month, set_month)
         self.type(year, set_year)
         #self.type(loan_option, set_loan_option)

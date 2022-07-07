@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head><link rel="shortcut icon" href="data:image/gif;base64,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">
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function find_all(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sort_column(elem) {
+    toggle_sort_states(elem);
+    var colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    var key;
+    if (elem.classList.contains('numeric')) {
+        key = key_num;
+    } else if (elem.classList.contains('result')) {
+        key = key_result;
+    } else {
+        key = key_alpha;
+    }
+    sort_table(elem, key(colIndex));
+}
+
+function show_all_extras() {
+    find_all('.col-result').forEach(show_extras);
+}
+
+function hide_all_extras() {
+    find_all('.col-result').forEach(hide_extras);
+}
+
+function show_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.remove("collapsed");
+    expandcollapse.classList.remove("expander");
+    expandcollapse.classList.add("collapser");
+}
+
+function hide_extras(colresult_elem) {
+    var extras = colresult_elem.parentNode.nextElementSibling;
+    var expandcollapse = colresult_elem.firstElementChild;
+    extras.classList.add("collapsed");
+    expandcollapse.classList.remove("collapser");
+    expandcollapse.classList.add("expander");
+}
+
+function show_filters() {
+    var filter_items = document.getElementsByClassName('filter');
+    for (var i = 0; i < filter_items.length; i++)
+        filter_items[i].hidden = false;
+}
+
+function add_collapse() {
+    // Add links for show/hide all
+    var resulttable = find('table#results-table');
+    var showhideall = document.createElement("p");
+    showhideall.innerHTML = '<a href="javascript:show_all_extras()">Show all details</a> / ' +
+                            '<a href="javascript:hide_all_extras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    find_all('.col-result').forEach(function(elem) {
+        var collapsed = get_query_parameter('collapsed') || 'Passed';
+        var extras = elem.parentNode.nextElementSibling;
+        var expandcollapse = document.createElement("span");
+        if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add("collapsed");
+            expandcollapse.classList.add("expander");
+        } else {
+            expandcollapse.classList.add("collapser");
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener("click", function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains("collapsed")) {
+                show_extras(event.currentTarget);
+            } else {
+                hide_extras(event.currentTarget);
+            }
+        });
+    })
+}
+
+function get_query_parameter(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () {
+    reset_sort_headers();
+
+    add_collapse();
+
+    show_filters();
+
+    sort_column(find('.initial-sort'));
+
+    find_all('.sortable').forEach(function(elem) {
+        elem.addEventListener("click",
+                              function(event) {
+                                  sort_column(elem);
+                              }, false)
+    });
+
+};
+
+function sort_table(clicked, key_func) {
+    var rows = find_all('.results-table-row');
+    var reversed = !clicked.classList.contains('asc');
+    var sorted_rows = sort(rows, key_func, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    var thead = document.getElementById("results-table-head");
+    document.getElementById('results-table').remove();
+    var parent = document.createElement("table");
+    parent.id = "results-table";
+    parent.appendChild(thead);
+    sorted_rows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName("BODY")[0].appendChild(parent);
+}
+
+function sort(items, key_func, reversed) {
+    var sort_array = items.map(function(item, i) {
+        return [key_func(item), i];
+    });
+
+    sort_array.sort(function(a, b) {
+        var key_a = a[0];
+        var key_b = b[0];
+
+        if (key_a == key_b) return 0;
+
+        if (reversed) {
+            return (key_a < key_b ? 1 : -1);
+        } else {
+            return (key_a > key_b ? 1 : -1);
+        }
+    });
+
+    return sort_array.map(function(item) {
+        var index = item[1];
+        return items[index];
+    });
+}
+
+function key_alpha(col_index) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[col_index].firstChild.data.toLowerCase();
+    };
+}
+
+function key_num(col_index) {
+    return function(elem) {
+        return parseFloat(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function key_result(col_index) {
+    return function(elem) {
+        var strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+                       'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[col_index].firstChild.data);
+    };
+}
+
+function reset_sort_headers() {
+    find_all('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    find_all('.sortable').forEach(function(elem) {
+        var icon = document.createElement("div");
+        icon.className = "sort-icon";
+        icon.textContent = "vvv";
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove("desc", "active");
+        elem.classList.add("asc", "inactive");
+    });
+}
+
+function toggle_sort_states(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        reset_sort_headers();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function is_all_rows_hidden(value) {
+  return value.hidden == false;
+}
+
+function filter_table(elem) {
+    var outcome_att = "data-test-result";
+    var outcome = elem.getAttribute(outcome_att);
+    class_outcome = outcome + " results-table-row";
+    var outcome_rows = document.getElementsByClassName(class_outcome);
+
+    for(var i = 0; i < outcome_rows.length; i++){
+        outcome_rows[i].hidden = !elem.checked;
+    }
+
+    var rows = find_all('.results-table-row').filter(is_all_rows_hidden);
+    var all_rows_hidden = rows.length == 0 ? true : false;
+    var not_found_message = document.getElementById("not-found-message");
+    not_found_message.hidden = !all_rows_hidden;
+}
+</script>
+    
+<script src="https://code.highcharts.com/9.0.1/highcharts.js"></script>
+<script src="https://code.highcharts.com/9.0.1/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/9.0.1/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/9.0.1/modules/accessibility.js"></script>
+
+<style>
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 320px;
+    max-width: 660px;
+    margin: 1em auto;
+}
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+</style>
+
+<figure class="highcharts-figure">
+    <div id="chartcontainer_1_1"></div>
+    <p class="highcharts-description"></p>
+</figure>
+
+<script>
+// Build the chart
+Highcharts.chart('chartcontainer_1_1', {
+credits: {
+    enabled: false
+},
+title: {
+    text: 'SeleniumBase Dashboard ⚪'
+},
+subtitle: {
+    text: ''
+},
+xAxis: {
+    labels: {
+        useHTML: true,
+        style: {
+            fontSize: '14px',
+        },
+    },
+categories: ['Passed','Untested','Skipped','Failed',], crosshair: false},
+yAxis: {
+
+    title: {
+        text: 'Values',
+        style: {
+            fontSize: '14px'
+        }
+    },
+    labels: {
+        useHTML: true,
+        style: {
+            fontSize: '14px'
+        }
+    }
+},
+chart: {
+    renderTo: 'statusChart',
+    plotBackgroundColor: null,
+    plotBorderWidth: null,
+    plotShadow: false,
+    type: 'pie'
+},
+
+tooltip: {
+    enabled: true,
+    useHTML: true,
+    style: {
+        padding: '6px',
+        fontSize: '14px'
+    },
+    backgroundColor: {
+        linearGradient: {
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 1
+        },
+        stops: [
+            [0, 'rgba(255, 255, 255, 0.78)'],
+            [0.5, 'rgba(235, 235, 235, 0.76)'],
+            [1, 'rgba(244, 252, 255, 0.74)']
+        ]
+    },
+    hideDelay: 40,
+    pointFormat: '<b>{point.y}</b><br /><b>{point.percentage:.1f}%</b>'
+},
+
+accessibility: {
+    point: {
+        valueSuffix: '%'
+    }
+},
+plotOptions: {
+    series: {
+        states: {
+            inactive: {
+                opacity: 0.85
+            }
+        }
+    },
+    pie: {
+        size: "95%",
+        allowPointSelect: true,
+        animation: false,
+        cursor: 'pointer',
+        dataLabels: {
+            enabled: true,
+            formatter: function() {
+              if (this.y > 0) {
+                return this.point.name + ': ' + this.point.y
+              }
+            }
+        },
+        states: {
+            hover: {
+                enabled: true
+            }
+        },
+        showInLegend: true
+    }
+},
+
+series: [{
+name: 'Series 1',
+colorByPoint: true,
+data: [
+
+{
+name: 'Passed',
+y: 0,
+color: '#84d474'
+},
+
+{
+name: 'Untested',
+y: 0,
+color: '#eaeaea'
+},
+
+{
+name: 'Skipped',
+y: 0,
+color: '#efd8b4'
+},
+
+{
+name: 'Failed',
+y: 5,
+color: '#f17476'
+},
+
+            ]
+                }]
+            });
+            </script>
+            
+    <p>Report generated on 07-Jul-2022 at 10:48:13 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>JAVA_HOME</td>
+        <td>C:\Program Files\Java\jdk-14.0.2</td></tr>
+      <tr>
+        <td>Packages</td>
+        <td>{&apos;pytest&apos;: &apos;7.1.2&apos;, &apos;py&apos;: &apos;1.11.0&apos;, &apos;pluggy&apos;: &apos;1.0.0&apos;}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Windows-10-10.0.19044-SP0</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{&apos;forked&apos;: &apos;1.4.0&apos;, &apos;html&apos;: &apos;2.0.1&apos;, &apos;metadata&apos;: &apos;2.0.1&apos;, &apos;ordering&apos;: &apos;0.6&apos;, &apos;rerunfailures&apos;: &apos;10.2&apos;, &apos;xdist&apos;: &apos;2.5.0&apos;, &apos;seleniumbase&apos;: &apos;3.3.6&apos;}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.10.5</td></tr></table>
+    <h2>Summary</h2>
+    <p>5 tests ran in 113.41 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">5 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable numeric" col="duration">Duration</th>
+          <th>Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">TestsCases/Pomis1Report/TC005_Pomis1AllDomail.py::TC001_Pomis1_Report::test_Operation_1</td>
+          <td class="col-duration">23.86</td>
+          <td class="col-links"><a class="url" href="https://timf.imikrof.com/PKSF_POMIS_1_REPORT" target="_blank">URL</a> <a class="image" href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_1_1_0.png" target="_blank">Screenshot</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="image"><a href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_1_1_0.png"><img src="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_1_1_0.png"/></a></div>
+            <div class="log">self = &lt;TC005_Pomis1AllDomail.TC001_Pomis1_Report testMethod=test_Operation_1&gt;<br/><br/>    def test_Operation_1(self):<br/>    <br/>        print(&quot;********* Start Bogura Town Area ********&quot;)<br/>    <br/>        url = &quot;https://timf.imikrof.com/&quot;<br/>        username = &quot;#email&quot;<br/>        password = &quot;#password&quot;<br/>        btnLogin = &quot;input[value=&#x27;Login&#x27;]&quot;<br/>    <br/>        report_level = &quot;#report_level&quot;<br/>        branch = &quot;#filter_bazr_info&quot;<br/>        month = &quot;select[name=&#x27;cbo_month&#x27;]&quot;<br/>        year = &quot;select[name=&#x27;cbo_year&#x27;]&quot;<br/>        #loan_option = &quot;select[name=&#x27;loan_option&#x27;]&quot;<br/>        show = &quot;//button[normalize-space()=&#x27;Show&#x27;]&quot;<br/>    <br/>    <br/>        self.open_url(url)<br/>        self.type(username, &quot;arman&quot;)<br/>        self.type(password, &quot;123456789&quot;)<br/>        self.click(btnLogin)<br/>        print(&quot;Login Successful&quot;)<br/>    <br/>        self.wait(2)<br/>    <br/>        # Pomis-1 Reports<br/>        self.open_url(&quot;https://timf.imikrof.com/PKSF_POMIS_1_REPORT&quot;)<br/>        self.wait(2)<br/>        self.type(report_level, &quot;Domain&quot;)<br/>        self.wait(2)<br/>        self.type(branch, &quot;2 - Operation-1&quot;)<br/>        self.type(month, set_month)<br/>        self.type(year, set_year)<br/>        #self.type(loan_option, set_loan_option)<br/>        self.click(show)<br/>    <br/>        # self.wait_for_element_visible(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[2]/tbody/tr[10]/td[5]&#x27;)<br/>        #self.wait(10)<br/>    <br/>        self.assert_text(&quot;POMIS-1 Report&quot;, &quot;h2 div[align=&#x27;center&#x27;]&quot;)<br/>        print(&quot;Report Open Successfully&quot;)<br/>    <br/>        # Statement of Samity and Member<br/>    <br/>        # NO OF SAMITY (3+4=5)<br/>    <br/>        samity_male3 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[3]/div&#x27;)<br/>        print(&quot;Samity Male:&quot;, samity_male3)<br/>    <br/>        samity_female4 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[4]/div&#x27;)<br/>        print(&quot;Samity Female:&quot;, samity_female4)<br/>    <br/>        exp_samity_total = str(int(samity_male3) + int(samity_female4))<br/>        print(&quot;Expected Statement of Samity and Member Total (NO OF SAMITY):&quot;, exp_samity_total)<br/>    <br/>        act_samity_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[5]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member Total (NO OF SAMITY) Total:&quot;, act_samity_total)<br/>    <br/>        if exp_samity_total == act_samity_total:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match&quot;)<br/>    <br/>        # NO OF MEMBER (6+7=8)<br/>    <br/>        member_male6 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[6]/div&#x27;)<br/>        print(&quot;Member Male:&quot;, member_male6)<br/>    <br/>        member_female7 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[7]/div&#x27;)<br/>        print(&quot;Member Female:&quot;, member_female7)<br/>    <br/>        exp_member_total = str(int(member_male6) + int(member_female7))<br/>        print(&quot;Expected Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, exp_member_total)<br/>    <br/>        act_member_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[8]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, act_member_total)<br/>    <br/>        self.assert_equal(exp_member_total, act_member_total)<br/>    <br/>        if exp_member_total == act_member_total:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Don&#x27;t Match&quot;)<br/>    <br/>        # Statement Of Savings (8+9=10)<br/>    <br/>        value8 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[4]&#x27;)<br/>        clb_male = float(value8.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Male:&quot;, clb_male)<br/>    <br/>        value9 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[5]&#x27;)<br/>        clb_female = float(value9.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Female:&quot;, clb_female)<br/>    <br/>        exp_clb_total = clb_male + clb_female<br/>        print(&quot;Expected Closing Balance:&quot;, exp_clb_total)<br/>    <br/>        value10 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[6]&#x27;)<br/>        act_clb_total = float(value10.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Actual Closing Balance:&quot;, act_clb_total)<br/>    <br/>        self.assert_equal(exp_clb_total, act_clb_total)<br/>    <br/>        if exp_clb_total == act_clb_total:<br/>            print(&quot;Statement of Savings (Closing Balance) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Savings (Closing Balance) Don&#x27;t Match&quot;)<br/>    <br/>&gt;       self.assert_equal(exp_samity_total, act_samity_total)<br/><br/>TestsCases\Pomis1Report\TC005_Pomis1AllDomail.py:120: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\site-packages\seleniumbase\fixtures\base_case.py:5908: in assert_equal<br/>    self.assertEqual(first, second, msg=msg)<br/><span class="error">E   AssertionError: &#x27;4296&#x27; != &#x27;2936&#x27;</span><br/><span class="error">E   - 4296</span><br/><span class="error">E   ? -</span><br/><span class="error">E   + 2936</span><br/><span class="error">E   ?   +</span><br/> ------------------------------Captured stdout call------------------------------ <br/>********* Start Bogura Town Area ********
+Login Successful
+Report Open Successfully
+Samity Male: 1692
+Samity Female: 2604
+Expected Statement of Samity and Member Total (NO OF SAMITY): 4296
+Actual Statement of Samity and Member Total (NO OF SAMITY) Total: 2936
+Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match
+Member Male: 8119
+Member Female: 26542
+Expected Statement of Samity and Member (NO. OF MEMBER) Total: 34661
+Actual Statement of Samity and Member (NO. OF MEMBER) Total: 34661
+Statement of Samity and Member (NO. OF MEMBER) Match
+Closing Balance Male: 99508872.0
+Closing Balance Female: 171328765.0
+Expected Closing Balance: 270837637.0
+Actual Closing Balance: 270837637.0
+Statement of Savings (Closing Balance) Match
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">TestsCases/Pomis1Report/TC005_Pomis1AllDomail.py::TC001_Pomis1_Report::test_Operation_11</td>
+          <td class="col-duration">20.55</td>
+          <td class="col-links"><a class="url" href="https://timf.imikrof.com/PKSF_POMIS_1_REPORT" target="_blank">URL</a> <a class="image" href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_11_1_0.png" target="_blank">Screenshot</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="image"><a href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_11_1_0.png"><img src="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_11_1_0.png"/></a></div>
+            <div class="log">self = &lt;TC005_Pomis1AllDomail.TC001_Pomis1_Report testMethod=test_Operation_11&gt;<br/><br/>    def test_Operation_11(self):<br/>    <br/>        print(&quot;********* Start Bogura Town Area ********&quot;)<br/>    <br/>        url = &quot;https://timf.imikrof.com/&quot;<br/>        username = &quot;#email&quot;<br/>        password = &quot;#password&quot;<br/>        btnLogin = &quot;input[value=&#x27;Login&#x27;]&quot;<br/>    <br/>        report_level = &quot;#report_level&quot;<br/>        branch = &quot;#filter_bazr_info&quot;<br/>        month = &quot;select[name=&#x27;cbo_month&#x27;]&quot;<br/>        year = &quot;select[name=&#x27;cbo_year&#x27;]&quot;<br/>        #loan_option = &quot;select[name=&#x27;loan_option&#x27;]&quot;<br/>        show = &quot;//button[normalize-space()=&#x27;Show&#x27;]&quot;<br/>    <br/>    <br/>        self.open_url(url)<br/>        self.type(username, &quot;arman&quot;)<br/>        self.type(password, &quot;123456789&quot;)<br/>        self.click(btnLogin)<br/>        print(&quot;Login Successful&quot;)<br/>    <br/>        self.wait(2)<br/>    <br/>        # Pomis-1 Reports<br/>        self.open_url(&quot;https://timf.imikrof.com/PKSF_POMIS_1_REPORT&quot;)<br/>        self.wait(2)<br/>        self.type(report_level, &quot;Domain&quot;)<br/>        self.wait(2)<br/>        self.type(branch, &quot;6 - Operation-11&quot;)<br/>        self.type(month, set_month)<br/>        self.type(year, set_year)<br/>        #self.type(loan_option, set_loan_option)<br/>        self.click(show)<br/>    <br/>        # self.wait_for_element_visible(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[2]/tbody/tr[10]/td[5]&#x27;)<br/>        #self.wait(10)<br/>    <br/>        self.assert_text(&quot;POMIS-1 Report&quot;, &quot;h2 div[align=&#x27;center&#x27;]&quot;)<br/>        print(&quot;Report Open Successfully&quot;)<br/>    <br/>        # Statement of Samity and Member<br/>    <br/>        # NO OF SAMITY (3+4=5)<br/>    <br/>        samity_male3 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[3]/div&#x27;)<br/>        print(&quot;Samity Male:&quot;, samity_male3)<br/>    <br/>        samity_female4 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[4]/div&#x27;)<br/>        print(&quot;Samity Female:&quot;, samity_female4)<br/>    <br/>        exp_samity_total = str(int(samity_male3) + int(samity_female4))<br/>        print(&quot;Expected Statement of Samity and Member Total (NO OF SAMITY):&quot;, exp_samity_total)<br/>    <br/>        act_samity_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[5]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member Total (NO OF SAMITY) Total:&quot;, act_samity_total)<br/>    <br/>        if exp_samity_total == act_samity_total:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match&quot;)<br/>    <br/>        # NO OF MEMBER (6+7=8)<br/>    <br/>        member_male6 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[6]/div&#x27;)<br/>        print(&quot;Member Male:&quot;, member_male6)<br/>    <br/>        member_female7 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[7]/div&#x27;)<br/>        print(&quot;Member Female:&quot;, member_female7)<br/>    <br/>        exp_member_total = str(int(member_male6) + int(member_female7))<br/>        print(&quot;Expected Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, exp_member_total)<br/>    <br/>        act_member_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[8]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, act_member_total)<br/>    <br/>        self.assert_equal(exp_member_total, act_member_total)<br/>    <br/>        if exp_member_total == act_member_total:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Don&#x27;t Match&quot;)<br/>    <br/>        # Statement Of Savings (8+9=10)<br/>    <br/>        value8 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[4]&#x27;)<br/>        clb_male = float(value8.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Male:&quot;, clb_male)<br/>    <br/>        value9 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[5]&#x27;)<br/>        clb_female = float(value9.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Female:&quot;, clb_female)<br/>    <br/>        exp_clb_total = clb_male + clb_female<br/>        print(&quot;Expected Closing Balance:&quot;, exp_clb_total)<br/>    <br/>        value10 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[6]&#x27;)<br/>        act_clb_total = float(value10.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Actual Closing Balance:&quot;, act_clb_total)<br/>    <br/>        self.assert_equal(exp_clb_total, act_clb_total)<br/>    <br/>        if exp_clb_total == act_clb_total:<br/>            print(&quot;Statement of Savings (Closing Balance) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Savings (Closing Balance) Don&#x27;t Match&quot;)<br/>    <br/>&gt;       self.assert_equal(exp_samity_total, act_samity_total)<br/><br/>TestsCases\Pomis1Report\TC005_Pomis1AllDomail.py:672: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\site-packages\seleniumbase\fixtures\base_case.py:5908: in assert_equal<br/>    self.assertEqual(first, second, msg=msg)<br/><span class="error">E   AssertionError: &#x27;1068&#x27; != &#x27;724&#x27;</span><br/><span class="error">E   - 1068</span><br/><span class="error">E   + 724</span><br/> ------------------------------Captured stdout call------------------------------ <br/>********* Start Bogura Town Area ********
+Login Successful
+Report Open Successfully
+Samity Male: 398
+Samity Female: 670
+Expected Statement of Samity and Member Total (NO OF SAMITY): 1068
+Actual Statement of Samity and Member Total (NO OF SAMITY) Total: 724
+Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match
+Member Male: 1589
+Member Female: 7473
+Expected Statement of Samity and Member (NO. OF MEMBER) Total: 9062
+Actual Statement of Samity and Member (NO. OF MEMBER) Total: 9062
+Statement of Samity and Member (NO. OF MEMBER) Match
+Closing Balance Male: 15719480.0
+Closing Balance Female: 43049092.0
+Expected Closing Balance: 58768572.0
+Actual Closing Balance: 58768572.0
+Statement of Savings (Closing Balance) Match
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">TestsCases/Pomis1Report/TC005_Pomis1AllDomail.py::TC001_Pomis1_Report::test_Operation_3</td>
+          <td class="col-duration">21.57</td>
+          <td class="col-links"><a class="url" href="https://timf.imikrof.com/PKSF_POMIS_1_REPORT" target="_blank">URL</a> <a class="image" href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_3_1_0.png" target="_blank">Screenshot</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="image"><a href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_3_1_0.png"><img src="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_3_1_0.png"/></a></div>
+            <div class="log">self = &lt;TC005_Pomis1AllDomail.TC001_Pomis1_Report testMethod=test_Operation_3&gt;<br/><br/>    def test_Operation_3(self):<br/>    <br/>        print(&quot;********* Start Bogura Town Area ********&quot;)<br/>    <br/>        url = &quot;https://timf.imikrof.com/&quot;<br/>        username = &quot;#email&quot;<br/>        password = &quot;#password&quot;<br/>        btnLogin = &quot;input[value=&#x27;Login&#x27;]&quot;<br/>    <br/>        report_level = &quot;#report_level&quot;<br/>        branch = &quot;#filter_bazr_info&quot;<br/>        month = &quot;select[name=&#x27;cbo_month&#x27;]&quot;<br/>        year = &quot;select[name=&#x27;cbo_year&#x27;]&quot;<br/>        #loan_option = &quot;select[name=&#x27;loan_option&#x27;]&quot;<br/>        show = &quot;//button[normalize-space()=&#x27;Show&#x27;]&quot;<br/>    <br/>    <br/>        self.open_url(url)<br/>        self.type(username, &quot;arman&quot;)<br/>        self.type(password, &quot;123456789&quot;)<br/>        self.click(btnLogin)<br/>        print(&quot;Login Successful&quot;)<br/>    <br/>        self.wait(2)<br/>    <br/>        # Pomis-1 Reports<br/>        self.open_url(&quot;https://timf.imikrof.com/PKSF_POMIS_1_REPORT&quot;)<br/>        self.wait(2)<br/>        self.type(report_level, &quot;Domain&quot;)<br/>        self.wait(2)<br/>        self.type(branch, &quot;3 - Operation-3&quot;)<br/>        self.type(month, set_month)<br/>        self.type(year, set_year)<br/>        #self.type(loan_option, set_loan_option)<br/>        self.click(show)<br/>    <br/>        # self.wait_for_element_visible(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[2]/tbody/tr[10]/td[5]&#x27;)<br/>        #self.wait(10)<br/>    <br/>        self.assert_text(&quot;POMIS-1 Report&quot;, &quot;h2 div[align=&#x27;center&#x27;]&quot;)<br/>        print(&quot;Report Open Successfully&quot;)<br/>    <br/>        # Statement of Samity and Member<br/>    <br/>        # NO OF SAMITY (3+4=5)<br/>    <br/>        samity_male3 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[3]/div&#x27;)<br/>        print(&quot;Samity Male:&quot;, samity_male3)<br/>    <br/>        samity_female4 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[4]/div&#x27;)<br/>        print(&quot;Samity Female:&quot;, samity_female4)<br/>    <br/>        exp_samity_total = str(int(samity_male3) + int(samity_female4))<br/>        print(&quot;Expected Statement of Samity and Member Total (NO OF SAMITY):&quot;, exp_samity_total)<br/>    <br/>        act_samity_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[5]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member Total (NO OF SAMITY) Total:&quot;, act_samity_total)<br/>    <br/>        if exp_samity_total == act_samity_total:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match&quot;)<br/>    <br/>        # NO OF MEMBER (6+7=8)<br/>    <br/>        member_male6 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[6]/div&#x27;)<br/>        print(&quot;Member Male:&quot;, member_male6)<br/>    <br/>        member_female7 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[7]/div&#x27;)<br/>        print(&quot;Member Female:&quot;, member_female7)<br/>    <br/>        exp_member_total = str(int(member_male6) + int(member_female7))<br/>        print(&quot;Expected Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, exp_member_total)<br/>    <br/>        act_member_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[8]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, act_member_total)<br/>    <br/>        self.assert_equal(exp_member_total, act_member_total)<br/>    <br/>        if exp_member_total == act_member_total:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Don&#x27;t Match&quot;)<br/>    <br/>        # Statement Of Savings (8+9=10)<br/>    <br/>        value8 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[4]&#x27;)<br/>        clb_male = float(value8.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Male:&quot;, clb_male)<br/>    <br/>        value9 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[5]&#x27;)<br/>        clb_female = float(value9.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Female:&quot;, clb_female)<br/>    <br/>        exp_clb_total = clb_male + clb_female<br/>        print(&quot;Expected Closing Balance:&quot;, exp_clb_total)<br/>    <br/>        value10 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[6]&#x27;)<br/>        act_clb_total = float(value10.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Actual Closing Balance:&quot;, act_clb_total)<br/>    <br/>        self.assert_equal(exp_clb_total, act_clb_total)<br/>    <br/>        if exp_clb_total == act_clb_total:<br/>            print(&quot;Statement of Savings (Closing Balance) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Savings (Closing Balance) Don&#x27;t Match&quot;)<br/>    <br/>&gt;       self.assert_equal(exp_samity_total, act_samity_total)<br/><br/>TestsCases\Pomis1Report\TC005_Pomis1AllDomail.py:258: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\site-packages\seleniumbase\fixtures\base_case.py:5908: in assert_equal<br/>    self.assertEqual(first, second, msg=msg)<br/><span class="error">E   AssertionError: &#x27;1518&#x27; != &#x27;1100&#x27;</span><br/><span class="error">E   - 1518</span><br/><span class="error">E   + 1100</span><br/> ------------------------------Captured stdout call------------------------------ <br/>********* Start Bogura Town Area ********
+Login Successful
+Report Open Successfully
+Samity Male: 529
+Samity Female: 989
+Expected Statement of Samity and Member Total (NO OF SAMITY): 1518
+Actual Statement of Samity and Member Total (NO OF SAMITY) Total: 1100
+Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match
+Member Male: 2438
+Member Female: 10518
+Expected Statement of Samity and Member (NO. OF MEMBER) Total: 12956
+Actual Statement of Samity and Member (NO. OF MEMBER) Total: 12956
+Statement of Samity and Member (NO. OF MEMBER) Match
+Closing Balance Male: 28771204.0
+Closing Balance Female: 62808433.0
+Expected Closing Balance: 91579637.0
+Actual Closing Balance: 91579637.0
+Statement of Savings (Closing Balance) Match
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">TestsCases/Pomis1Report/TC005_Pomis1AllDomail.py::TC001_Pomis1_Report::test_Operation_4</td>
+          <td class="col-duration">20.48</td>
+          <td class="col-links"><a class="url" href="https://timf.imikrof.com/PKSF_POMIS_1_REPORT" target="_blank">URL</a> <a class="image" href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_4_1_0.png" target="_blank">Screenshot</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="image"><a href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_4_1_0.png"><img src="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_4_1_0.png"/></a></div>
+            <div class="log">self = &lt;TC005_Pomis1AllDomail.TC001_Pomis1_Report testMethod=test_Operation_4&gt;<br/><br/>    def test_Operation_4(self):<br/>    <br/>        print(&quot;********* Start Bogura Town Area ********&quot;)<br/>    <br/>        url = &quot;https://timf.imikrof.com/&quot;<br/>        username = &quot;#email&quot;<br/>        password = &quot;#password&quot;<br/>        btnLogin = &quot;input[value=&#x27;Login&#x27;]&quot;<br/>    <br/>        report_level = &quot;#report_level&quot;<br/>        branch = &quot;#filter_bazr_info&quot;<br/>        month = &quot;select[name=&#x27;cbo_month&#x27;]&quot;<br/>        year = &quot;select[name=&#x27;cbo_year&#x27;]&quot;<br/>        #loan_option = &quot;select[name=&#x27;loan_option&#x27;]&quot;<br/>        show = &quot;//button[normalize-space()=&#x27;Show&#x27;]&quot;<br/>    <br/>    <br/>        self.open_url(url)<br/>        self.type(username, &quot;arman&quot;)<br/>        self.type(password, &quot;123456789&quot;)<br/>        self.click(btnLogin)<br/>        print(&quot;Login Successful&quot;)<br/>    <br/>        self.wait(2)<br/>    <br/>        # Pomis-1 Reports<br/>        self.open_url(&quot;https://timf.imikrof.com/PKSF_POMIS_1_REPORT&quot;)<br/>        self.wait(2)<br/>        self.type(report_level, &quot;Domain&quot;)<br/>        self.wait(2)<br/>        self.type(branch, &quot;4 - Operation-4&quot;)<br/>        self.type(month, set_month)<br/>        self.type(year, set_year)<br/>        #self.type(loan_option, set_loan_option)<br/>        self.click(show)<br/>    <br/>        # self.wait_for_element_visible(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[2]/tbody/tr[10]/td[5]&#x27;)<br/>        #self.wait(10)<br/>    <br/>        self.assert_text(&quot;POMIS-1 Report&quot;, &quot;h2 div[align=&#x27;center&#x27;]&quot;)<br/>        print(&quot;Report Open Successfully&quot;)<br/>    <br/>        # Statement of Samity and Member<br/>    <br/>        # NO OF SAMITY (3+4=5)<br/>    <br/>        samity_male3 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[3]/div&#x27;)<br/>        print(&quot;Samity Male:&quot;, samity_male3)<br/>    <br/>        samity_female4 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[4]/div&#x27;)<br/>        print(&quot;Samity Female:&quot;, samity_female4)<br/>    <br/>        exp_samity_total = str(int(samity_male3) + int(samity_female4))<br/>        print(&quot;Expected Statement of Samity and Member Total (NO OF SAMITY):&quot;, exp_samity_total)<br/>    <br/>        act_samity_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[5]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member Total (NO OF SAMITY) Total:&quot;, act_samity_total)<br/>    <br/>        if exp_samity_total == act_samity_total:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match&quot;)<br/>    <br/>        # NO OF MEMBER (6+7=8)<br/>    <br/>        member_male6 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[6]/div&#x27;)<br/>        print(&quot;Member Male:&quot;, member_male6)<br/>    <br/>        member_female7 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[7]/div&#x27;)<br/>        print(&quot;Member Female:&quot;, member_female7)<br/>    <br/>        exp_member_total = str(int(member_male6) + int(member_female7))<br/>        print(&quot;Expected Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, exp_member_total)<br/>    <br/>        act_member_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[8]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, act_member_total)<br/>    <br/>        self.assert_equal(exp_member_total, act_member_total)<br/>    <br/>        if exp_member_total == act_member_total:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Don&#x27;t Match&quot;)<br/>    <br/>        # Statement Of Savings (8+9=10)<br/>    <br/>        value8 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[4]&#x27;)<br/>        clb_male = float(value8.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Male:&quot;, clb_male)<br/>    <br/>        value9 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[5]&#x27;)<br/>        clb_female = float(value9.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Female:&quot;, clb_female)<br/>    <br/>        exp_clb_total = clb_male + clb_female<br/>        print(&quot;Expected Closing Balance:&quot;, exp_clb_total)<br/>    <br/>        value10 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[6]&#x27;)<br/>        act_clb_total = float(value10.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Actual Closing Balance:&quot;, act_clb_total)<br/>    <br/>        self.assert_equal(exp_clb_total, act_clb_total)<br/>    <br/>        if exp_clb_total == act_clb_total:<br/>            print(&quot;Statement of Savings (Closing Balance) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Savings (Closing Balance) Don&#x27;t Match&quot;)<br/>    <br/>&gt;       self.assert_equal(exp_samity_total, act_samity_total)<br/><br/>TestsCases\Pomis1Report\TC005_Pomis1AllDomail.py:396: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\site-packages\seleniumbase\fixtures\base_case.py:5908: in assert_equal<br/>    self.assertEqual(first, second, msg=msg)<br/><span class="error">E   AssertionError: &#x27;485&#x27; != &#x27;333&#x27;</span><br/><span class="error">E   - 485</span><br/><span class="error">E   + 333</span><br/> ------------------------------Captured stdout call------------------------------ <br/>********* Start Bogura Town Area ********
+Login Successful
+Report Open Successfully
+Samity Male: 202
+Samity Female: 283
+Expected Statement of Samity and Member Total (NO OF SAMITY): 485
+Actual Statement of Samity and Member Total (NO OF SAMITY) Total: 333
+Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match
+Member Male: 1164
+Member Female: 3203
+Expected Statement of Samity and Member (NO. OF MEMBER) Total: 4367
+Actual Statement of Samity and Member (NO. OF MEMBER) Total: 4367
+Statement of Samity and Member (NO. OF MEMBER) Match
+Closing Balance Male: 10767729.0
+Closing Balance Female: 18019242.0
+Expected Closing Balance: 28786971.0
+Actual Closing Balance: 28786971.0
+Statement of Savings (Closing Balance) Match
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">TestsCases/Pomis1Report/TC005_Pomis1AllDomail.py::TC001_Pomis1_Report::test_Operation_9</td>
+          <td class="col-duration">23.45</td>
+          <td class="col-links"><a class="url" href="https://timf.imikrof.com/PKSF_POMIS_1_REPORT" target="_blank">URL</a> <a class="image" href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_9_1_0.png" target="_blank">Screenshot</a> </td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="image"><a href="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_9_1_0.png"><img src="assets/TestsCases_Pomis1Report_TC005_Pomis1AllDomail.py__TC001_Pomis1_Report__test_Operation_9_1_0.png"/></a></div>
+            <div class="log">self = &lt;TC005_Pomis1AllDomail.TC001_Pomis1_Report testMethod=test_Operation_9&gt;<br/><br/>    def test_Operation_9(self):<br/>    <br/>        print(&quot;********* Start Bogura Town Area ********&quot;)<br/>    <br/>        url = &quot;https://timf.imikrof.com/&quot;<br/>        username = &quot;#email&quot;<br/>        password = &quot;#password&quot;<br/>        btnLogin = &quot;input[value=&#x27;Login&#x27;]&quot;<br/>    <br/>        report_level = &quot;#report_level&quot;<br/>        branch = &quot;#filter_bazr_info&quot;<br/>        month = &quot;select[name=&#x27;cbo_month&#x27;]&quot;<br/>        year = &quot;select[name=&#x27;cbo_year&#x27;]&quot;<br/>        #loan_option = &quot;select[name=&#x27;loan_option&#x27;]&quot;<br/>        show = &quot;//button[normalize-space()=&#x27;Show&#x27;]&quot;<br/>    <br/>    <br/>        self.open_url(url)<br/>        self.type(username, &quot;arman&quot;)<br/>        self.type(password, &quot;123456789&quot;)<br/>        self.click(btnLogin)<br/>        print(&quot;Login Successful&quot;)<br/>    <br/>        self.wait(2)<br/>    <br/>        # Pomis-1 Reports<br/>        self.open_url(&quot;https://timf.imikrof.com/PKSF_POMIS_1_REPORT&quot;)<br/>        self.wait(2)<br/>        self.type(report_level, &quot;Domain&quot;)<br/>        self.wait(2)<br/>        self.type(branch, &quot;5 - Operation-9&quot;)<br/>        self.type(month, set_month)<br/>        self.type(year, set_year)<br/>        #self.type(loan_option, set_loan_option)<br/>        self.click(show)<br/>    <br/>        # self.wait_for_element_visible(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[2]/tbody/tr[10]/td[5]&#x27;)<br/>        #self.wait(10)<br/>    <br/>        self.assert_text(&quot;POMIS-1 Report&quot;, &quot;h2 div[align=&#x27;center&#x27;]&quot;)<br/>        print(&quot;Report Open Successfully&quot;)<br/>    <br/>        # Statement of Samity and Member<br/>    <br/>        # NO OF SAMITY (3+4=5)<br/>    <br/>        samity_male3 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[3]/div&#x27;)<br/>        print(&quot;Samity Male:&quot;, samity_male3)<br/>    <br/>        samity_female4 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[4]/div&#x27;)<br/>        print(&quot;Samity Female:&quot;, samity_female4)<br/>    <br/>        exp_samity_total = str(int(samity_male3) + int(samity_female4))<br/>        print(&quot;Expected Statement of Samity and Member Total (NO OF SAMITY):&quot;, exp_samity_total)<br/>    <br/>        act_samity_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[5]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member Total (NO OF SAMITY) Total:&quot;, act_samity_total)<br/>    <br/>        if exp_samity_total == act_samity_total:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match&quot;)<br/>    <br/>        # NO OF MEMBER (6+7=8)<br/>    <br/>        member_male6 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[6]/div&#x27;)<br/>        print(&quot;Member Male:&quot;, member_male6)<br/>    <br/>        member_female7 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[7]/div&#x27;)<br/>        print(&quot;Member Female:&quot;, member_female7)<br/>    <br/>        exp_member_total = str(int(member_male6) + int(member_female7))<br/>        print(&quot;Expected Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, exp_member_total)<br/>    <br/>        act_member_total = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[3]/tbody/tr[13]/th[8]/div&#x27;)<br/>        print(&quot;Actual Statement of Samity and Member (NO. OF MEMBER) Total:&quot;, act_member_total)<br/>    <br/>        self.assert_equal(exp_member_total, act_member_total)<br/>    <br/>        if exp_member_total == act_member_total:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Samity and Member (NO. OF MEMBER) Don&#x27;t Match&quot;)<br/>    <br/>        # Statement Of Savings (8+9=10)<br/>    <br/>        value8 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[4]&#x27;)<br/>        clb_male = float(value8.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Male:&quot;, clb_male)<br/>    <br/>        value9 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[5]&#x27;)<br/>        clb_female = float(value9.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Closing Balance Female:&quot;, clb_female)<br/>    <br/>        exp_clb_total = clb_male + clb_female<br/>        print(&quot;Expected Closing Balance:&quot;, exp_clb_total)<br/>    <br/>        value10 = self.get_text(&#x27;//*[@id=&quot;DivIdToPrint&quot;]/div/table[4]/tbody/tr[78]/td[6]&#x27;)<br/>        act_clb_total = float(value10.replace(&#x27;,&#x27;, &#x27;&#x27;))<br/>        print(&quot;Actual Closing Balance:&quot;, act_clb_total)<br/>    <br/>        self.assert_equal(exp_clb_total, act_clb_total)<br/>    <br/>        if exp_clb_total == act_clb_total:<br/>            print(&quot;Statement of Savings (Closing Balance) Match&quot;)<br/>        else:<br/>            print(&quot;Statement of Savings (Closing Balance) Don&#x27;t Match&quot;)<br/>    <br/>&gt;       self.assert_equal(exp_samity_total, act_samity_total)<br/><br/>TestsCases\Pomis1Report\TC005_Pomis1AllDomail.py:534: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>C:\Users\TMSS-ICT\AppData\Local\Programs\Python\Python310\lib\site-packages\seleniumbase\fixtures\base_case.py:5908: in assert_equal<br/>    self.assertEqual(first, second, msg=msg)<br/><span class="error">E   AssertionError: &#x27;1571&#x27; != &#x27;1131&#x27;</span><br/><span class="error">E   - 1571</span><br/><span class="error">E   + 1131</span><br/> ------------------------------Captured stdout call------------------------------ <br/>********* Start Bogura Town Area ********
+Login Successful
+Report Open Successfully
+Samity Male: 563
+Samity Female: 1008
+Expected Statement of Samity and Member Total (NO OF SAMITY): 1571
+Actual Statement of Samity and Member Total (NO OF SAMITY) Total: 1131
+Statement of Samity and Member Total (NO OF SAMITY) Don&#x27;t Match
+Member Male: 2919
+Member Female: 12196
+Expected Statement of Samity and Member (NO. OF MEMBER) Total: 15115
+Actual Statement of Samity and Member (NO. OF MEMBER) Total: 15115
+Statement of Samity and Member (NO. OF MEMBER) Match
+Closing Balance Male: 38033366.0
+Closing Balance Female: 76325260.0
+Expected Closing Balance: 114358626.0
+Actual Closing Balance: 114358626.0
+Statement of Savings (Closing Balance) Match
+<br/></div></td></tr></tbody></table></body></html><p></p><div><b>Status:</b> Test Run Complete: <b>5 tests failed!</b> --- (<b><a href="latest_logs/">See latest logs for details</a></b>)</div><p></p>
